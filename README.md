@@ -14,7 +14,7 @@ aplications
 Operative system (utilities, compilers, editors)
 --------------------------------------------------------------
 syscall (system call interface) - POSIX.1 - (API)
-open(), read(), write(), ...
+open(), read(), write(), fork()...
 --------------------------------------------------------------
 nucleus or kernel (I/O, memory, network, disk, ...)
 drivers
@@ -31,3 +31,64 @@ IPC - inter process communication
 - docker
 
 python3
+
+```sh
+--------------
+Process: 
+Priorities:
+
+              |Tiempo real (RT)|                           |Ususario|
++-----------------------------------------------+------------------------+
+0                                               100                      139
+                                                0                        39 PRIority
+                                                -20                      +19 NIce
+
+
+Process creation: -> clonación
+
+- fork()
+- subprocess
+- system
+- pool
+- multiprocessing
+- threading
+
+Process Table:
+
+PID (process id), open files, memory ...
+    -> memory map
+
++----------------------------+
+|                            |
+|                            |
+|                            |
+|                            |
+|                            |
+|                            |
++----------------------------+
+|                            |
+|                            |
+|                            |
+|                            |
+|                            |
++----------------------------+
+
++----------------------------+
+|                            |
+|                            |
+|                            |
+|                            |
+|                            |
+|                            |
++----------------------------+
+|                            |
+|                            |
+|                            |
+|                            |
+|                            |
++----------------------------+
+
+daemon process (daemon)
+
+
+```
