@@ -1,16 +1,33 @@
-# Dillinger
-## _The Last Markdown Editor, Ever_
+# COMPUTING II
+## parallelism, concurrency
 
+This is a project for the computing II course of Universidad de Mendoza.
 
+## Notes:
 
-This is a project for the computing 2 course of my university.
+```sh
+--------------------------------------------------------------
+user
+--------------------------------------------------------------
+aplications
+--------------------------------------------------------------
+Operative system (utilities, compilers, editors)
+--------------------------------------------------------------
+syscall (system call interface) - POSIX.1 - (API)
+open(), read(), write(), ...
+--------------------------------------------------------------
+nucleus or kernel (I/O, memory, network, disk, ...)
+drivers
+--------------------------------------------------------------
+hardware
+--------------------------------------------------------------
+```
 
-Here we can manage the process cool
+Parallel and concurrency programming
+IPC - inter process communication
+- pipes, fifos, sockets unix, shm, ...
+- sockets inet
+- distributed process -> celery+redis
+- docker
 
-Themes:
-- OS
-- Process
-- python3
-- cli
-- concurrency
-- pararlelism
+python3
