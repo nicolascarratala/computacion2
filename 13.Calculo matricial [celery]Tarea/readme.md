@@ -5,14 +5,20 @@ antes que todo:
 pyhton3 -m venv venv
 pip3 install -r requirements.txt
 
-primero:
+1:
+
+en otra consola ejecutar:
 
 docker compose up
 
-segundo:
+2:
+
+en otra consola ejecutar:
 
 celery -A main worker --loglevel=INFO -c4
 
-tercero:
+3:
+
+en otra consola ejecutar:
 
 python3 calc.py -f file.txt -c log|raiz|pot
